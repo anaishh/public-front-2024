@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  color: black;
+}
+
+.pokelist {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+button {
+  background: slateblue;
+  color: whitesmoke;
+}
+li {
+  font-size: 1.5rem;
+}
