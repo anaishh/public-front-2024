@@ -1,0 +1,37 @@
+#root {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+body {
+  background: linear-gradient(lightsteelblue, lightblue);
+}
+
+button {
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  border: 1px solid slategray;
+  background:linear-gradient(black, hsl(210, 17%, 24%));
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.counter {
+  font-size: 5rem;
+  border: 5px double #444;
+  width: 20vw;
+  height: 20vw;
+  display: grid;
+  place-content: center;
+  background:linear-gradient(black, hsl(210, 17%, 24%));
+  color:bisque;
+}
+
