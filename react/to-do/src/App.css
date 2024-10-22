@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: white;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+  margin-top: 40px;
+
+}
+
+h1 {
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo de u-tad */
+
+.utad-logo-container {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.utad-logo {
+  height: 100px;
+}
+
+/* Lista de tareas */
+
+.todo-list {
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
+
+/* Contenedor de tarea */
+.todo-container {
+  width: 500px;
+  min-height: 65px;
+  background-color: #1b1b32;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* Colores de fondo para las tareas, con subclases (enésimo hijo, en este caso cada tres elementos se repite la secuencia de colores) */
+.todo-container:nth-child(3n + 1) {
+  background-color: #1b1b32;
+}
+.todo-container:nth-child(3n + 2) {
+  background-color: #2a2a40;
+}
+.todo-container:nth-child(3n + 3) {
+  background-color: #3b3b4f;
+}
+
+/* Tarea completada */
+.todo-container.completed {
+  background-color: #5a01a7;
+  text-decoration: line-through
+}
+
+/* Texto */
+.todo-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+/* Iconos */
+.todo-icon-container {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.todo-icon {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.list-todo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Estructura principal */
+.form-todo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Campo de texto */
+.input-todo {
+ width: 350px;
+ font-size: 18px;
+ background-color: white;
+ padding: 14px 32px 14px 16px;
+ border-radius: 4px 0 0 4px;
+ border: 2px solid #00471b;
+ outline: none;
+}
+
+/* Botón para añadir tarea */
+.button-todo {
+ padding: 16px;
+ font-size: 18px;
+ font-family: Roboto, sans-serif;
+ border: none;
+ border-radius: 0 4px 4px 0;
+ cursor: pointer;
+ outline: none;
+ background: #00471b;
+ color: white;
+ text-transform: capitalize;
+}
